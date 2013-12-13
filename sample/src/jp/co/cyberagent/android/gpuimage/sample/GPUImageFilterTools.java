@@ -455,7 +455,7 @@ public class GPUImageFilterTools {
             }
         }
 
-        private class BrightnessAdjuster extends Adjuster<GPUImageBrightnessFilter> {
+        private class GPUImageOpacityFilterBrightnessAdjuster extends Adjuster<GPUImageBrightnessFilter> {
             @Override
             public void adjust(final int percentage) {
                 getFilter().setBrightness(range(percentage, -1.0f, 1.0f));
